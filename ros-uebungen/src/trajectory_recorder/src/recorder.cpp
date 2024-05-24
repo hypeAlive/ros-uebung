@@ -5,6 +5,7 @@
 #include "std_msgs/msg/string.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "sensor_msgs/msg/imu.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 using std::placeholders::_1;
 
@@ -30,6 +31,8 @@ public:
                 "rosbot_base_controller/odom",
                 10,
                 std::bind(&TrajectoryRecorder::odom_callback, this, _1));
+
+        pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("trajectory_recorder/imu_pose", 10);
 
         global_x_ = 0;
         global_y_ = 0;
@@ -133,6 +136,7 @@ private:
 
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
 
     std::ofstream& odom_out_;
     std::ofstream& imu_out_;
