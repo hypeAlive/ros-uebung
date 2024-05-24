@@ -8,6 +8,7 @@
 
 using std::placeholders::_1;
 
+// Struct fürs Speichern der berechneten Positionen
 struct Position {
     double x;
     double z;

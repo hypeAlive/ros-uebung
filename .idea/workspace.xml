@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e41a617e-db36-4726-93c4-7e7aad5a6861" name="Changes" comment="" />
+    <list default="true" id="e41a617e-db36-4726-93c4-7e7aad5a6861" name="Changes" comment="created ros workspace">
+      <change beforePath="$PROJECT_DIR$/ros-uebungen/src/trajectory_recorder/src/recorder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ros-uebungen/src/trajectory_recorder/src/recorder.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +20,12 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2gvQ9YQ0pi8UadgjWS7XjNd2MKl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +39,8 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/nicol/Desktop/übung3/src",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/nicol/CLionProjects/ros-uebung/ros-uebungen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicol\CLionProjects\ros-uebung\ros-uebungen" />
       <recent name="C:\Users\nicol\Desktop\übung3\src" />
     </key>
   </component>
@@ -53,10 +63,24 @@
       <option name="presentableId" value="Default" />
       <updated>1716575422878</updated>
       <workItem from="1716575423916" duration="382000" />
+      <workItem from="1716576072473" duration="611000" />
     </task>
+    <task id="LOCAL-00001" summary="created ros workspace">
+      <option name="closed" value="true" />
+      <created>1716576160536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716576160536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created ros workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="created ros workspace" />
   </component>
 </project>
