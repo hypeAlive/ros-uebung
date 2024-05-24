@@ -105,6 +105,27 @@ private:
         {
             imu_out_ << xn << " " << zn << std::endl;
         }
+
+        // PoseStamp Nachricht
+        geometry_msgs::msg::PoseStamped pose_msg;
+
+        //header
+        pose_msg.header.stamp = this->now();
+        pose_msg.header.frame_id = "base_link";
+
+        //position
+        pose_msg.pose.position.x = xn;
+        pose_msg.pose.position.y = 0;
+        pose_msg.pose.position.z = zn;
+
+        //orientation
+        pose_msg.pose.orientation.x = 0.0;
+        pose_msg.pose.orientation.y = 0.0;
+        pose_msg.pose.orientation.z = std::sin(thetan / 2.0);
+        pose_msg.pose.orientation.w = std::cos(thetan / 2.0);
+
+        //publish PoseStamped msg
+        pose_pub_->publish(pose_msg);
     }
 
     void odom_callback(const nav_msgs::msg::Odometry& msg)
